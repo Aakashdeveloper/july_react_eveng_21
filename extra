@@ -1,0 +1,66 @@
+https://code.visualstudio.com/download
+https://nodejs.org/en/
+https://github.com/
+
+Npm
+React = 3
+Mock API
+json-server
+React-JWT(Login Logout)-2
+Depolyment
+-> MERN
+-> Docker
+-> heroku
+-> Nginx
+-> Aws
+Github
+
+React-GraphQL-1
+React_hooks -1
+Basic React Native=1
+React-Redux =1
+React-Redux =1
+Testing Jest Enzime
+
+//walkthrough
+React-Saga -1
+React-with-typescript-1
+--------NOT Backend--------------
+API
+GraphQL
+Login/Logout
+
+React is a frontend lib/framework that help to build single page application
+using component base structures
+
+open source
+npm > node package manager
+
+////////////////////////////////////////////////////////////////
+JSON > JavaScript Object Notation
+[
+    {
+        name:'John',
+        class:'Ui'
+    },
+    {
+        name:'Rahul',
+        class:'React',
+        city:'Delhi'
+    }
+]
+
+//////////////////////
+
+package.json
+> Entry point to the application.json
+> meta data(name,description,version)
+> Packages
+> script(start,build,test)
+
+> vscodeicon
+> gitlens
+> git history
+> eslint
+> tabnine
+> auto close tag
