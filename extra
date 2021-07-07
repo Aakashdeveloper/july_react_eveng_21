@@ -64,3 +64,54 @@ package.json
 > eslint
 > tabnine
 > auto close tag
+
+
+//////////////////////
+Step To generate package.json
+////////////////
+**NodeJS must be install in system
+> go inside the folder using cmd/terminal
+> npm init
+> answer all questions
+> type yes
+
+//////////////////////
+Step To install package
+////////////////
+**NodeJS must be install in system
+> go inside the folder using cmd/terminal
+> npm i packagename /npm i packagename --save /npm install packagename 
+
+//////////////////////
+Step To generate react app
+//////////////////////
+// for office laptop
+**NodeJS must be install in system
+> go inside the folder using cmd
+> npx create-react-app appname
+
+// for windows
+>>>>One time step<<<<<<<
+> open cmd as administrator
+> npm i -g create-react-app
+
+>>>>Next all time you want app<<<<<<<
+> go inside the folder using cmd
+> create-react-app appname
+
+
+// for mac/linux
+>>>>One time step<<<<<<<
+> open terminal
+> sudo npm i -g create-react-app
+
+>>>>Next all time you want app<<<<<<<
+> go inside the folder using cmd
+> create-react-app appname
+
+//////////////////////
+Step To run react app
+//////////////////////
+> go inside the folder using cmd
+> npm start
+> localhost:3000
