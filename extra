@@ -115,3 +115,18 @@ Step To run react app
 > go inside the folder using cmd
 > npm start
 > localhost:3000
+
+///////////
+react > main lib or package
+react-dom > help to load content on browser
+react-script> help to run the app 
+
+//es5
+function add(a,b){
+    return a+b
+}
+
+//es6
+const add = (a,b) => {
+    return a+b
+}
