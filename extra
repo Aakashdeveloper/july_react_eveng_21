@@ -130,3 +130,34 @@ function add(a,b){
 const add = (a,b) => {
     return a+b
 }
+
+/////////
+npm i @babel/core @babel/preset-env @babel/register
+function add(a,b){
+    var out = [a,b]
+    return out
+}
+
+add(1,2)
+[1,2]
+
+
+function add(a,b){
+    return a,b
+}
+
+add(1,2)
+2
+
+///////////////
+class 
+> Logical Component
+> call Api, data interaction, display
+> you can maintain state in class
+
+functional
+> Dumb component
+> use for display purpose
+> we cannot maintain state
+
+Hooks
