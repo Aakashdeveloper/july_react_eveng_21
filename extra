@@ -161,3 +161,24 @@ functional
 > we cannot maintain state
 
 Hooks
+
+
+state
+> mutable( we can update the value of state)
+> any data interaction will happen through state only
+> local variable
+
+props 
+> help to transfer the data between 2 nested component
+> we cannot update the value of props (immutable)
+
+
+function add(a,b){
+
+}
+
+// JavaScript
+ternory operator
+map
+filter
+indexof

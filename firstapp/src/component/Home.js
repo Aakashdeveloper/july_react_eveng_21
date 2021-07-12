@@ -8,7 +8,7 @@ const Home = () => {
             <Header/>
             <h1>Hii to React App</h1>
             <h2>My App</h2>
-            <Footer/>
+            <Footer year="2021" month="July"/>
         </>
     )
 }
