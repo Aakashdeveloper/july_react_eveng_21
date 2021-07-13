@@ -182,3 +182,40 @@ ternory operator
 map
 filter
 indexof
+
+
+>>>>>>>>>><<<<<<
+var a = [2,3,5,6,7,3,2,4,6,7,9,4]
+a.map((data) => {return data*2})
+[4, 6, 10, 12, 14, 6, 4, 8, 12, 14, 18, 8]
+
+var a = [2,3,5,6,7,3,2,4,6,7,9,4]
+a.filter((data) => {return data>5})
+[6, 7, 6, 7, 9]
+
+var a = ["delhi","mumbai","amsterdam","venice"]
+a.indexOf('mumbai')
+1
+a.indexOf('venice')
+3
+a.indexOf('paris')
+-1
+a.indexOf('london')
+-1
+a.indexOf('delhi')
+0
+
+var a = [0,1,2,3]
+a.filter((data) => {return data*2})
+[1, 2, 3]
+
+parent => child (props)
+child => parent (props with function)
+
+//parent
+function add(a,b){
+    return a+b
+}
+
+//child
+add(1,2)

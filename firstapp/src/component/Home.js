@@ -1,16 +1,29 @@
-import React from 'react';
+import React,{Component} from 'react';
 import Header from './Header';
-import Footer from './Footer'
+import Footer from './Footer';
+import NewsDetails from './NewsDetails';
+import JSON from './db.json';
 
-const Home = () => {
-    return(
-        <>
-            <Header/>
-            <h1>Hii to React App</h1>
-            <h2>My App</h2>
-            <Footer year="2021" month="July"/>
-        </>
-    )
+class Home extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state={
+            news: JSON
+        }
+    }
+
+    render(){
+        console.log(this.state.news)
+        return(
+            <>
+                <Header userText={(data) => {console.log(`in home ${data}`)}}/>
+                <NewsDetails newsdata={this.state.news} />
+                <Footer year="2021" month="July"/>
+            </>
+        )
+    }
 }
+
 
 export default Home;
