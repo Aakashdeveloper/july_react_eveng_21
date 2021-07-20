@@ -4,7 +4,9 @@ const Footer = () => {
     return(
         <div>
             <hr/>
-            <h1>Footer</h1>
+           <center>
+               <h3>&copy; DeveloperFunnel 2021</h3>
+           </center>
         </div>
     )
 }

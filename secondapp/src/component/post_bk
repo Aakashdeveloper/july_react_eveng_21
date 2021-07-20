@@ -1,0 +1,41 @@
+import React from 'react';
+
+const Post = () => {
+    return(
+        <div className="panel panel-primary">
+            <div className="panel-heading">
+                <h3>Post</h3>   
+            </div>
+            <div className="panel-body">
+                <button className="btn btn-primary">Click</button>
+                <button className="btn btn-success">Click</button>
+                <button className="btn btn-danger">Click</button>
+                <button className="btn btn-warning">Click</button>
+                <button className="btn btn-info">Click</button>
+                <table className="table">
+                    <thead>
+                        <tr>
+                            <th>Roll no</th>
+                            <th>Name</th>
+                            <th>Class</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John</td>
+                            <td>React</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ankit</td>
+                            <td>Node</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    )
+}
+
+export default Post

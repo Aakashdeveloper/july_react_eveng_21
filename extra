@@ -219,3 +219,11 @@ function add(a,b){
 
 //child
 add(1,2)
+
+//////////
+params / (complusory to define)
+queryParams ? (optional)
+
+history > redirection
+location > queryParams
+match > params
