@@ -17,8 +17,6 @@ const Header = () => {
                     <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/post">Post</Link></li>
-                        <li><Link to="/profile">Profile</Link></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
