@@ -2,13 +2,15 @@ import React, {Component} from 'react';
 import './Search.css';
 
 const CityUrl = "https://developerfunnel.herokuapp.com/location";
+const HotelUrl = "https://developerfunnel.herokuapp.com/hotels?city="
 
 class Search extends Component {
     constructor(props) {
         super(props);
         console.log(">>>>>i am inside constructor")
         this.state={
-            location:''
+            location:'',
+            hotels:''
         };
     }
 
@@ -21,8 +23,28 @@ class Search extends Component {
                     </option>
                 )
             })
-        }
-        
+        } 
+    }
+
+    renderHotel = (data) => {
+        if(data){
+            return data.map((item) => {
+                return (
+                    <option value={item._id}>
+                        {item.name} | {item.locality}
+                    </option>
+                )
+            })
+        } 
+    }
+
+    handleCity = (event) => {
+        const cityId = event.target.value;
+        fetch(`${HotelUrl}${cityId}`, {method:'GET'})
+        .then((res) => res.json())
+        .then((data) => {
+            this.setState({hotels:data})
+        })
     }
     
     render() {
@@ -36,12 +58,13 @@ class Search extends Component {
                     Plan Trip With Us
                 </div>
                 <div className="locationSelector">
-                    <select className="locationDropDown">
+                    <select className="locationDropDown" onChange={this.handleCity}>
                         <option>----SELECT CITY----</option>
                         {this.renderCity(this.state.location)}
                     </select>
                     <select className="hotelDropDown">
                         <option>----SELECT HOTEL----</option>
+                        {this.renderHotel(this.state.hotels)}
                     </select>
                 </div>
             </div>
