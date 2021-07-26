@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
+import ListingDisplay from './listingDisplay';
 
 const url = "https://developerfunnel.herokuapp.com/hotellist"
 
@@ -14,16 +15,17 @@ class Listing extends Component {
 
     render(){
         return(
-            <div>Listing</div>
+            <div className="row">
+                <div className="col-md-2">
+                    Filter Here
+                </div>
+                <div className="col-md-10">
+                    <ListingDisplay listdata={this.state.hotellist}/>
+                </div>
+            </div>
         )
     }
-    /*
-    fetch(`${HotelUrl}${cityId}`, {method:'GET'})
-        .then((res) => res.json())
-        .then((data) => {
-            this.setState({hotels:data})
-        })
-        */
+
 
     // call api to get hotel wrt to trip id 
     componentDidMount(){
