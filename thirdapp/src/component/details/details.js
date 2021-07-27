@@ -11,7 +11,8 @@ class Details extends Component{
         super(props);
 
         this.state={
-            details:''
+            details:'',
+            rooms:[{},{},{}]
         }
     }
 
@@ -67,7 +68,21 @@ class Details extends Component{
                                 <h4>Phone No: 7567565633</h4>
                             </TabPanel>
                             <TabPanel>
-                                <h2></h2>
+                                <h4>
+                                    <span class="label label-info">
+                                        {this.state.rooms[0].name}
+                                    </span>
+                                </h4>
+                                <h4>
+                                    <span class="label label-primary">
+                                        {this.state.rooms[1].name}
+                                    </span>
+                                </h4>
+                                <h4>
+                                    <span class="label label-success">
+                                        {this.state.rooms[2].name}
+                                    </span>
+                                </h4>
                             </TabPanel>
                             <TabPanel>
                                 <h2>Non Smoking</h2>
@@ -75,6 +90,8 @@ class Details extends Component{
                                 <h2>In Room Service</h2>
                             </TabPanel>
                         </Tabs>
+                        <Link to="/" className="btn btn-danger">Back</Link> &nbsp;
+                        <Link to={`/booking/${details.name}`} className="btn btn-success"> Proceed</Link>
                     </div>
                 </div>
             </div>
@@ -86,7 +103,8 @@ class Details extends Component{
     async componentDidMount(){
         let hotelId= this.props.match.params.id;
         let response = await axios.get(`${url}/${hotelId}`)
-        this.setState({details:response.data[0]})
+        this.setState({details:response.data[0], rooms:response.data[0].type})
+        sessionStorage.setItem('cost', response.data[0].cost)
     }
 }
 
