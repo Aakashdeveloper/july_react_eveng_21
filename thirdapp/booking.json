@@ -1,0 +1,37 @@
+{
+  "bookings": [
+    {
+      "id": 7029,
+      "hotel_name": "Hometel Chandigarh",
+      "name": "Aakash",
+      "phone": "65664545",
+      "email": "a@gmail.com",
+      "cost": "2419",
+      "status": "TXN_SUCCESS",
+      "date": "2021-07-28%2019:27:05.0",
+      "bank": "Punjab%20National%20Bank"
+    },
+    {
+      "id": 6294,
+      "hotel_name": "DoubleTree by Hilton",
+      "name": "Ankit",
+      "phone": "76786876",
+      "email": "ankit@gmail.com",
+      "cost": "2419",
+      "status": "TXN_SUCCESS",
+      "date": "2021-07-28%2019:36:34.0",
+      "bank": "Andhra%20Bank"
+    },
+    {
+      "id": 42,
+      "hotel_name": "Trident Nariman Point",
+      "name": "Nikita",
+      "phone": "776565",
+      "email": "niki@gmail.com",
+      "cost": "4000",
+      "status": "TXN_SUCCESS",
+      "date": "2021-07-28%2019:37:18.0",
+      "bank": "Kotak%20Bank"
+    }
+  ]
+}

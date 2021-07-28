@@ -242,3 +242,25 @@ match > params
 (get) quickSearch>    https://developerfunnel.herokuapp.com/booking
 (get) bookingdetails> https://developerfunnel.herokuapp.com/allBooking
 (post)placebooking >  https://developerfunnel.herokuapp.com/placeBook
+
+///dummy api////
+npm i -g json-server
+json-server --watch booking.json --port 8900
+
+
+var a = "?status=TXN_SUCCESS&ORDERID=TEST_7029&date=2021-07-28%2019:27:05.0&bank=Punjab%20National%20Bank"
+undefined
+a.split('&')
+(4) ["?status=TXN_SUCCESS", "ORDERID=TEST_7029", "date=2021-07-28%2019:27:05.0", "bank=Punjab%20National%20Bank"]0: "?status=TXN_SUCCESS"1: "ORDERID=TEST_7029"2: "date=2021-07-28%2019:27:05.0"3: "bank=Punjab%20National%20Bank"length: 4[[Prototype]]: Array(0)
+a.split('&')[0]
+"?status=TXN_SUCCESS"
+a.split('&')[0].split('=')
+(2) ["?status", "TXN_SUCCESS"]0: "?status"1: "TXN_SUCCESS"length: 2[[Prototype]]: Array(0)
+a.split('&')[0].split('=')[1]
+"TXN_SUCCESS"
+a.split('&')[1].split('=')[1]
+"TEST_7029"
+a.split('&')[2].split('=')[1]
+"2021-07-28%2019:27:05.0"
+a.split('&')[3].split('=')[1]
+"Punjab%20National%20Bank"
