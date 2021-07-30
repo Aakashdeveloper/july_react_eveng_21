@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 const ListingDisplay = (props) => {
     const renderList = ({listdata}) => {
         if(listdata){
+            console.log("listdata",listdata)
             if(listdata.length>0){
                 return listdata.map((item) =>{
                     return(
@@ -23,6 +24,11 @@ const ListingDisplay = (props) => {
                                             <span className="label label-primary">{item.tripType[0].name}</span> &nbsp;
                                             <span className="label label-success">{item.tripType[1].name}</span> 
                                         </div>
+                                        <div>
+                                            <span className="label label-danger">{item.type[0].name}</span> &nbsp;
+                                            <span className="label label-warning">{item.type[1].name}</span> &nbsp;
+                                            <span className="label label-info">{item.type[2].name}</span> 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -30,9 +36,11 @@ const ListingDisplay = (props) => {
                     )
                 })
             }else{
-                <div className="item">
-                    <h2>No Data Found</h2>
-                </div>   
+                return(
+                    <div className="item">
+                        <h2>No Data Found</h2>
+                    </div>  
+                ) 
             }
         }else{
             return(

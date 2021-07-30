@@ -2,7 +2,8 @@ import React from 'react';
 import Search from './Search';
 import QuickSearch from './QuickSearch';
 
-const Home = () => {
+const Home = (props) => {
+    console.log(">>>>>i am inside home", props)
     return(
         <div>
             <Search/>
