@@ -8,16 +8,13 @@ Mock API
 json-server
 React-JWT(Login Logout)-2
 Github
-///////////////
-
 Depolyment
 -> MERN
+-> Nginx
 -> Docker
 -> heroku
--> Nginx
 -> Aws
-
-
+///////////////
 React-GraphQL-1
 React_hooks -1
 
@@ -303,3 +300,10 @@ git commit -m "first commit"
 git push
 
 git checkout -b branchname
+
+
+npm run build
+
+
+docker build . -t appname
+docker run -p 3000:5800 appname
