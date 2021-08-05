@@ -14,11 +14,12 @@ Depolyment
 -> Docker
 -> heroku
 -> Aws
-///////////////
 React-GraphQL-1
+///////////////
 React_hooks -1
 
 Basic React Native=1
+
 React-Redux =1
 React-Redux =1
 Testing Jest Enzime
@@ -307,3 +308,15 @@ npm run build
 
 docker build . -t appname
 docker run -p 3000:5800 appname
+
+npm i apollo-boost apollo-graphql graphql graphql-tag react-apollo
+
+
+///////////
+npm i -g create-react-native-app
+create-react-native-app mymobi
+
+cd mymobi
+npm run web
+
+in mobile download 'expo' app
