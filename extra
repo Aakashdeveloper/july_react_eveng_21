@@ -320,3 +320,5 @@ cd mymobi
 npm run web
 
 in mobile download 'expo' app
+
+npm i react-redux react-router-dom react-slick redux redux-logger redux-promise
